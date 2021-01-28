@@ -1,0 +1,19 @@
+# Spring application properties
+spring:
+  # Data base properties
+  jpa:
+    database: mysql
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  datasource:
+    master:
+      jdbc-url: "jdbc:mysql://127.0.0.1:3306/cloud?useSSL=false&zeroDateTimeBehavior=convertToNull&noAccessToProcedureBodies=true&sessionVariables=wait_timeout=600&serverTimezone=Asia/Seoul"
+      username: "root"
+      password: "1234"
+    slave:
+      jdbc-url: "jdbc:mysql://127.0.0.1:3306/sky?useSSL=false&zeroDateTimeBehavior=convertToNull&noAccessToProcedureBodies=true&sessionVariables=wait_timeout=600&serverTimezone=Asia/Seoul"
+      username: "root"
+      password: "1234"
+
